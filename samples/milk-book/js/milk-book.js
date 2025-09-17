@@ -1,8 +1,8 @@
 /* Steve jobs' book */
 
 (function ($) {
-  var sampleName = "steve-jobs",
-    samplePath = "samples/steve-jobs/",
+  var sampleName = "milk-book",
+    samplePath = "samples/milk-book/",
     zoomIn = false;
 
   function isChrome() {
@@ -319,7 +319,7 @@
 
           yepnope({
             test: Modernizr.csstransforms,
-            nope: sample.path + "css/steve-jobs-html4.css",
+            nope: sample.path + "css/milk-book-html4.css",
           });
 
           return;
