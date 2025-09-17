@@ -54,8 +54,8 @@
     var pageElement = $("<div />", {
       class: "own-size",
       css: {
-        width: 460,
-        height: 582,
+        width: 550,
+        height: 550,
       },
     }).html('<div class="loader"></div>');
 
@@ -187,8 +187,8 @@
       autoCenter: true,
       duration: 1500,
       pages: 112,
-      width: 960,
-      height: 600,
+      width: 1100,
+      height: 550,
       when: {
         turning: function (e, page, view) {
           var book = $(this),

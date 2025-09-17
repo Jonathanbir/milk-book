@@ -4,14 +4,14 @@
   display: none;
 }
 
-.sj-book {
-  width: 960px;
-  height: 600px;
+/* .sj-book {
+  width: 1100px;
+  height: 560px;
   background-image: url(../pics/spine.png);
   background-repeat: repeat-y;
-  background-position: 479px 0;
+  background-position: 550px 0;
   z-index: 0;
-}
+} */
 
 .sj-book .inner-gradient {
   background: -webkit-gradient(
@@ -195,6 +195,10 @@
   overflow: visible !important;
 }
 
+.sj-book-transform {
+  left: -10%;
+}
+
 .sj-book .depth {
   background-image: url(../pics/pages-depth.png);
   position: absolute;
@@ -214,11 +218,11 @@
 }
 
 .sj-book .p2 {
-  background-position: -480px 0 !important;
+  background-position: -550px 0 !important;
 }
 
 .sj-book .p3 {
-  background-position: -1920px 0 !important;
+  background-position: -1830px 0 !important;
 }
 
 .sj-book .p111 {
@@ -226,7 +230,7 @@
 }
 
 .sj-book .p112 {
-  background-position: -1440px 0 !important;
+  background-position: -1824px 0 !important;
 }
 
 .sj-book .hard {
@@ -247,14 +251,14 @@
 }
 
 .sj-book .own-size {
-  width: 460px;
-  height: 582px;
+  width: 550px;
+  height: 550px;
   overflow: hidden;
   background-image: url(../pics/pages.png);
 }
 
 .sj-book .own-size.even {
-  background-position: 0 0;
+  background-position: -24% 0;
   /*background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
 	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
 	background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
@@ -264,7 +268,7 @@
 }
 
 .sj-book .own-size.odd {
-  background-position: 460px 0;
+  background-position: -40% 0;
   /*background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
 	background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
