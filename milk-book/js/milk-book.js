@@ -29,17 +29,18 @@
     depthWidth = 16 * Math.min(1, ((pages - page) * 2) / pages);
 
     if (newPage < pages - 3)
-      $(".sj-book .p111 .depth").css({
+      $(".sj-book .p49 .depth").css({
         width: depthWidth,
         right: 20 - depthWidth,
       });
     else
-      $(".sj-book .p111 .depth").css({
+      $(".sj-book .p49 .depth").css({
         width: 0,
       });
   }
 
   function loadPage(page, pageElement) {
+    console.log("page:", page);
     $.ajax({
       url: samplePath + "pages/page" + page + ".html",
     }).done(function (pageHtml) {
@@ -54,8 +55,8 @@
     var pageElement = $("<div />", {
       class: "own-size",
       css: {
-        width: 550,
-        height: 550,
+        width: 530,
+        height: 530,
       },
     }).html('<div class="loader"></div>');
 
@@ -186,7 +187,7 @@
       acceleration: !isChrome(),
       autoCenter: true,
       duration: 1500,
-      pages: 112,
+      pages: 50,
       width: 1100,
       height: 550,
       when: {
@@ -228,8 +229,8 @@
           if (page >= 2) $(".sj-book .p2").addClass("fixed");
           else $(".sj-book .p2").removeClass("fixed");
 
-          if (page < book.turn("pages")) $(".sj-book .p111").addClass("fixed");
-          else $(".sj-book .p111").removeClass("fixed");
+          if (page < book.turn("pages")) $(".sj-book .p49").addClass("fixed");
+          else $(".sj-book .p49").removeClass("fixed");
 
           if (!$(".splash .bookshelf").is(":visible")) {
             Hash.go("/" + sampleName + "/" + page).update();
@@ -346,8 +347,8 @@
                 '<div depth="5" class="hard front-side"> <div class="depth"></div> </div>' +
                 '<div class="own-size"></div>' +
                 '<div class="own-size even"></div>' +
-                '<div class="hard fixed back-side p111"> <div class="depth"></div> </div>' +
-                '<div class="hard p112"></div>'
+                '<div class="hard fixed back-side p49"> <div class="depth"></div> </div>' +
+                '<div class="hard p50"></div>'
             )
             .bind($.isTouch ? "touchend" : "click", zoomHandle)
             .appendTo($("#book-zoom"));
