@@ -29,12 +29,12 @@
     depthWidth = 16 * Math.min(1, ((pages - page) * 2) / pages);
 
     if (newPage < pages - 3)
-      $(".sj-book .p49 .depth").css({
+      $(".sj-book .p23 .depth").css({
         width: depthWidth,
         right: 20 - depthWidth,
       });
     else
-      $(".sj-book .p49 .depth").css({
+      $(".sj-book .p23 .depth").css({
         width: 0,
       });
   }
@@ -186,7 +186,7 @@
       acceleration: !isChrome(),
       autoCenter: true,
       duration: 1500,
-      pages: 50,
+      pages: 24,
       width: 1100,
       height: 550,
       when: {
@@ -228,8 +228,8 @@
           if (page >= 2) $(".sj-book .p2").addClass("fixed");
           else $(".sj-book .p2").removeClass("fixed");
 
-          if (page < book.turn("pages")) $(".sj-book .p49").addClass("fixed");
-          else $(".sj-book .p49").removeClass("fixed");
+          if (page < book.turn("pages")) $(".sj-book .p23").addClass("fixed");
+          else $(".sj-book .p23").removeClass("fixed");
 
           if (!$(".splash .bookshelf").is(":visible")) {
             Hash.go("/" + sampleName + "/" + page).update();
@@ -294,7 +294,8 @@
         },
 
         missing: function (e, pages) {
-          pages = pages.map((n) => n - 1);
+          // pages = pages.map((n) => n - 1);
+          console.log("pages:", pages);
           for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
         },
       },
@@ -347,8 +348,8 @@
                 '<div depth="5" class="hard front-side"> <div class="depth"></div> </div>' +
                 '<div class="own-size"></div>' +
                 '<div class="own-size even"></div>' +
-                '<div class="hard fixed back-side p49"> <div class="depth"></div> </div>' +
-                '<div class="hard p50"></div>'
+                '<div class="hard fixed back-side p23"> <div class="depth"></div> </div>' +
+                '<div class="hard p24"></div>'
             )
             .bind($.isTouch ? "touchend" : "click", zoomHandle)
             .appendTo($("#book-zoom"));

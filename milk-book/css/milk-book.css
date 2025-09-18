@@ -148,8 +148,8 @@
 .sj-book .p1,
 .sj-book .p2,
 .sj-book .p3,
-.sj-book .p49,
-.sj-book .p50 {
+.sj-book .p23,
+.sj-book .p24 {
   background-color: white;
   background-image: url(../pics/book-covers.jpg) !important;
 }
@@ -225,11 +225,11 @@
   background-position: -1830px 0 !important;
 }
 
-.sj-book .p49 {
+.sj-book .p23 {
   background-position: -717px 0 !important;
 }
 
-.sj-book .p50 {
+.sj-book .p24 {
   background-position: -1267px 0 !important;
 }
 
