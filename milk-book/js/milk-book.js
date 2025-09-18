@@ -40,7 +40,6 @@
   }
 
   function loadPage(page, pageElement) {
-    console.log("page:", page);
     $.ajax({
       url: samplePath + "pages/page" + page + ".html",
     }).done(function (pageHtml) {
@@ -295,6 +294,7 @@
         },
 
         missing: function (e, pages) {
+          pages = pages.map((n) => n - 1);
           for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
         },
       },
