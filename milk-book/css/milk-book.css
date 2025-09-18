@@ -6,7 +6,7 @@
 
 /* .sj-book {
   width: 1100px;
-  height: 560px;
+  height: 600px;
   background-image: url(../pics/spine.png);
   background-repeat: repeat-y;
   background-position: 550px 0;
@@ -152,10 +152,11 @@
 .sj-book .p24 {
   background-color: white;
   background-image: url(../pics/book-covers.jpg) !important;
+  background-size: cover;
 }
 
 .sj-book .p1 {
-  background-position: 0 0;
+  background-position: 10px 0;
 }
 
 .sj-book .p1 .side {
@@ -202,9 +203,9 @@
 .sj-book .depth {
   background-image: url(../pics/pages-depth.png);
   position: absolute;
-  top: 6px;
+  top: 17px;
   width: 16px;
-  height: 535px;
+  height: 562px;
 }
 
 .sj-book .front-side .depth {
@@ -218,7 +219,7 @@
 }
 
 .sj-book .p2 {
-  background-position: -550px 0 !important;
+  background-position: -585px 0 !important;
 }
 
 .sj-book .p3 {
@@ -226,11 +227,11 @@
 }
 
 .sj-book .p23 {
-  background-position: -717px 0 !important;
+  background-position: -585px 0 !important;
 }
 
 .sj-book .p24 {
-  background-position: -1267px 0 !important;
+  background-position: -1357px 0 !important;
 }
 
 .sj-book .hard {
@@ -251,14 +252,14 @@
 }
 
 .sj-book .own-size {
-  width: 530px;
-  height: 530px;
+  width: 560px;
+  height: 560px;
   overflow: hidden;
   background-image: url(../pics/pages.png);
 }
 
 .sj-book .own-size.even {
-  background-position: -18% 0;
+  background-position: -27% 0;
   /*background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
 	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
 	background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);

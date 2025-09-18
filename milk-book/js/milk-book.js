@@ -19,7 +19,7 @@
     if (newPage > 3)
       $(".sj-book .p2 .depth").css({
         width: depthWidth,
-        left: 20 - depthWidth,
+        left: 40 - depthWidth,
       });
     else
       $(".sj-book .p2 .depth").css({
@@ -31,7 +31,7 @@
     if (newPage < pages - 3)
       $(".sj-book .p23 .depth").css({
         width: depthWidth,
-        right: 20 - depthWidth,
+        right: 40 - depthWidth,
       });
     else
       $(".sj-book .p23 .depth").css({
@@ -54,8 +54,8 @@
     var pageElement = $("<div />", {
       class: "own-size",
       css: {
-        width: 530,
-        height: 530,
+        width: 560,
+        height: 560,
       },
     }).html('<div class="loader"></div>');
 
@@ -187,8 +187,8 @@
       autoCenter: true,
       duration: 1500,
       pages: 24,
-      width: 1100,
-      height: 550,
+      width: 1200,
+      height: 600,
       when: {
         turning: function (e, page, view) {
           var book = $(this),
@@ -295,6 +295,7 @@
 
         missing: function (e, pages) {
           // pages = pages.map((n) => n - 1);
+          console.log("pages:", pages);
           for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
         },
       },
