@@ -295,7 +295,6 @@
 
         missing: function (e, pages) {
           // pages = pages.map((n) => n - 1);
-          console.log("pages:", pages);
           for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
         },
       },
