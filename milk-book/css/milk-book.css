@@ -1,5 +1,3 @@
-/* Steve jobs' book */
-
 .sample-milk-book .zoom-in {
   display: none;
 }
@@ -276,15 +274,6 @@
 	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
 	background-image:linear-gradient(right, #fff 95%, #cacaca 100%);*/
-}
-
-.sj-book .loader {
-  background-image: url(../pics/loader.gif);
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 280px;
-  left: 219px;
 }
 
 .sj-book .page-number {

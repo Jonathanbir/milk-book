@@ -1,5 +1,3 @@
-/* Steve jobs' book */
-
 (function ($) {
   var sampleName = "milk-book",
     samplePath = "/milk-book/",
@@ -292,7 +290,6 @@
 
           bookshelf.moveBar(false);
         },
-
         missing: function (e, pages) {
           // pages = pages.map((n) => n - 1);
           console.log("pages:", pages);
