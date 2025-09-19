@@ -1,6 +1,6 @@
 (function ($) {
   var sampleName = "milk-book",
-    samplePath = "/milk-book/",
+    samplePath = "samples/milk-book/",
     zoomIn = false;
 
   function isChrome() {
@@ -230,7 +230,7 @@
           else $(".sj-book .p23").removeClass("fixed");
 
           if (!$(".splash .bookshelf").is(":visible")) {
-            Hash.go("/" + sampleName + "/" + page).update();
+            Hash.go("/samples/" + sampleName + "/" + page).update();
           }
 
           // Update the spine position
