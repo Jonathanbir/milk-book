@@ -342,7 +342,7 @@
             .html(
               '<div depth="5" class="hard"> <div class="side"></div> </div>' +
                 '<div depth="5" class="hard front-side"> <div class="depth"></div> </div>' +
-                '<div class="own-size"></div>' +
+                // '<div class="own-size"></div>' +
                 '<div class="hard fixed back-side p23"> <div class="depth"></div> </div>' +
                 '<div class="hard p24"></div>'
             )
