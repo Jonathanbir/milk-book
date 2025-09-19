@@ -291,7 +291,6 @@
           bookshelf.moveBar(false);
         },
         missing: function (e, pages) {
-          // pages = pages.map((n) => n - 1);
           console.log("pages:", pages);
           for (var i = 0; i < pages.length; i++) addPage(pages[i], $(this));
         },
@@ -344,7 +343,6 @@
               '<div depth="5" class="hard"> <div class="side"></div> </div>' +
                 '<div depth="5" class="hard front-side"> <div class="depth"></div> </div>' +
                 '<div class="own-size"></div>' +
-                '<div class="own-size even"></div>' +
                 '<div class="hard fixed back-side p23"> <div class="depth"></div> </div>' +
                 '<div class="hard p24"></div>'
             )
