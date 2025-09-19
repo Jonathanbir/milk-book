@@ -703,6 +703,7 @@ li {
 .bookshelf .thumb1,
 .bookshelf-row .thumb1 {
   background-image: url(../pics/book1.jpg);
+  background-size: cover;
   width: 92px;
   height: 115px;
 }
